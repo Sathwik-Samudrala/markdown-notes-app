@@ -38,7 +38,8 @@ Other:
 
 
 ### Editor & Preview
-<img width="1920" height="1080" alt="Screenshot-2 - Copy" src="https://github.com/user-attachments/assets/abc66370-69bf-4984-acd3-6b0116601436" />
+<img width="1919" height="1018" alt="Screenshot-1" src="https://github.com/user-attachments/assets/cd5c9ca8-a9bb-479a-af16-9447de76a23a" />
+
 
 
 ### Dark Mode
