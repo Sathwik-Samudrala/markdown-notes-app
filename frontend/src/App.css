@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg-main: #f5f0e8;
+  --bg-sidebar: #fffdf7;
+  --bg-card: #ffffff;
+  --bg-header: #2d4a3e;
+  --accent: #e07b39;
+  --accent-light: #f5a06a;
+  --green: #3a7d5f;
+  --green-light: #d4edda;
+  --text-primary: #2c2c2c;
+  --text-secondary: #6b6b6b;
+  --text-muted: #9e9e9e;
+  --border: #e0d9cc;
+  --card-hover: #fff8f0;
+  --delete-red: #d9534f;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --radius: 10px;
+  --font-main: 'Nunito', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+.dark {
+  --bg-main: #1a1e1b;
+  --bg-sidebar: #222722;
+  --bg-card: #2a302a;
+  --bg-header: #141814;
+  --accent: #f0935a;
+  --accent-light: #c9723c;
+  --green: #5aad87;
+  --green-light: #1e3d2f;
+  --text-primary: #e8e4dc;
+  --text-secondary: #a0a898;
+  --text-muted: #6b7066;
+  --border: #3a4038;
+  --card-hover: #313830;
+  --shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-main);
+  color: var(--text-primary);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-header {
+  background: var(--bg-header);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 140px;
+}
+
+.app-logo { font-size: 22px; }
+
+.app-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f0e8d5;
+  letter-spacing: 0.5px;
+}
+
+.header-center { flex: 1; max-width: 400px; }
+
+.search-input {
+  width: 100%;
+  padding: 7px 14px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.12);
+  color: #f0e8d5;
+  font-family: var(--font-main);
+  font-size: 14px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+.search-input::placeholder { color: rgba(240,232,213,0.55); }
+.search-input:focus { background: rgba(255,255,255,0.2); }
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 120px;
+  justify-content: flex-end;
+}
+
+.save-badge {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.save-badge.saving { background: rgba(255,200,100,0.2); color: #ffd580; }
+.save-badge.saved  { background: rgba(90,173,135,0.2);  color: #7dd4ad; }
+
+.dark-toggle {
+  background: rgba(255,255,255,0.12);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.dark-toggle:hover { background: rgba(255,255,255,0.22); }
+
+.app-body { display: flex; height: calc(100vh - 56px); }
+
+.sidebar {
+  width: 260px;
+  min-width: 220px;
+  background: var(--bg-sidebar);
+  border-right: 1.5px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.new-note-btn {
+  margin: 14px 14px 10px;
+  padding: 9px 0;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-main);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.12s;
+}
+
+.new-note-btn:hover { background: var(--accent-light); transform: translateY(-1px); }
+.new-note-btn:active { transform: translateY(0); }
+
+.loading-text {
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 20px;
+  text-align: center;
+}
+
+.editor-area { flex: 1; overflow: hidden; background: var(--bg-main); }
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 12px;
+  color: var(--text-muted);
+}
+
+.empty-icon { font-size: 52px; margin-bottom: 8px; }
+.empty-state h2 { font-size: 20px; color: var(--text-secondary); }
+.empty-state p  { font-size: 14px; margin-bottom: 10px; }
+.empty-state .new-note-btn { margin: 0; padding: 10px 28px; font-size: 15px; }
