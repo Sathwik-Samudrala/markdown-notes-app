@@ -34,7 +34,7 @@ Other:
 ## 📸 Screenshots
 
 ### Home Page
-![Home](screenshots/home.png)
+![Home](screenshot-1.png)
 
 ### Editor & Preview
 ![Editor](screenshots/editor.png)
