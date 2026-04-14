@@ -34,14 +34,16 @@ Other:
 ## 📸 Screenshots
 
 ### Home Page
-![Home]<img width="1920" height="1080" alt="Screenshot-2" src="https://github.com/user-attachments/assets/de7cf1f6-aae3-4d7c-84ae-a237f7583780" />
+<img width="1920" height="1080" alt="Screenshot-2" src="https://github.com/user-attachments/assets/de7cf1f6-aae3-4d7c-84ae-a237f7583780" />
 
 
 ### Editor & Preview
-![Editor](screenshots/editor.png)
+<img width="1920" height="1080" alt="Screenshot-2 - Copy" src="https://github.com/user-attachments/assets/abc66370-69bf-4984-acd3-6b0116601436" />
+
 
 ### Dark Mode
-![Dark Mode](screenshots/darkmode.png)
+<img width="1920" height="1080" alt="Screenshot-3" src="https://github.com/user-attachments/assets/c8b96e22-a3a6-4523-a023-3382499d5144" />
+
 
 ---
 
