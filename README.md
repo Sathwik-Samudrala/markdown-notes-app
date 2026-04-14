@@ -34,7 +34,8 @@ Other:
 ## 📸 Screenshots
 
 ### Home Page
-![Home](screenshot-1.png)
+![Home]<img width="1920" height="1080" alt="Screenshot-2" src="https://github.com/user-attachments/assets/de7cf1f6-aae3-4d7c-84ae-a237f7583780" />
+
 
 ### Editor & Preview
 ![Editor](screenshots/editor.png)
